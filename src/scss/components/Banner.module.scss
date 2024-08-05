@@ -1,0 +1,154 @@
+@import '../variables';
+
+.container {
+	margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 872px 423px;
+  grid-template-rows: 288px 288px;
+  gap: 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'bg1 bg2'
+    'bg1 bg3';
+  img {
+    border-radius: 12px;
+  }
+  .bg1 {
+    position: relative;
+    grid-area: bg1;
+    img {
+      width: 873px;
+      height: 600px;
+    }
+    .info {
+      position: absolute;
+      left: 60px;
+      top: 155px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      .title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 1.2;
+        color: $gray-scale-white;
+      }
+      .sale {
+        display: flex;
+        gap: 12px;
+        .rectangle {
+          width: 2px;
+          height: 65px;
+          background: $branding-success-bright;
+        }
+        .description {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .saleContainer {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .saleTitle {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 1.5;
+              color: $gray-scale-white;
+            }
+            .saleValue {
+              border-radius: 5px;
+              padding: 4px 12px;
+              width: 85px;
+              height: 38px;
+              background: $branding-warning;
+              span {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 1.5;
+                color: $gray-scale-white;
+              }
+            }
+          }
+          .saleDecription {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5;
+            color: $gray-scale-white;
+          }
+        }
+      }
+    }
+  }
+  .bg2 {
+    position: relative;
+    grid-area: bg2;
+    .info {
+      position: absolute;
+      left: 32px;
+      top: 32px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      .description {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .title {
+          color: $gray-scale-gray-900;
+        }
+        .sale {
+          color: $gray-scale-gray-900;
+        }
+        .saleDecription {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.5;
+          color: $gray-scale-gray-600;
+        }
+      }
+    }
+  }
+  .bg3 {
+    position: relative;
+    grid-area: bg3;
+    .info {
+      position: absolute;
+      width: 340px;
+      height: 154px;
+      left: calc(50% - 170px);
+      top: calc(50% - 77px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 32px;
+      .description {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .title {
+          text-align: center;
+          color: $gray-scale-white;
+        }
+        .saleDecription {
+          text-align: center;
+          color: $gray-scale-white;
+        }
+      }
+    }
+  }
+  .titleBg {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .saleBg {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}

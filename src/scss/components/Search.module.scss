@@ -1,0 +1,29 @@
+@import '../_variables.scss';
+
+.search {
+  position: relative;
+  .searchInput {
+    font-size: 15px;
+    border: 1px solid $gray-scale-gray-100;
+    border-radius: 5px;
+    width: 410px;
+    padding: 12px 45px;
+  }
+  .searchIcon {
+    position: absolute;
+    left: 15px;
+    top: calc(50% - 9px);
+  }
+  .searchClear {
+    cursor: pointer;
+    height: 22px;
+    opacity: 0.5;
+    position: absolute;
+    right: 14px;
+    top: calc(50% - 11px);
+    width: 24px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

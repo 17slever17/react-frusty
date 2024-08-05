@@ -1,0 +1,56 @@
+@import '../_variables.scss';
+
+.link {
+	width: 126px;
+  .linkContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    span {
+      transition: margin-right 0.1s ease-in-out;
+    }
+    &:hover {
+      cursor: pointer;
+      & * {
+        color: $branding-success-bright;
+        stroke: $branding-success-bright;
+      }
+      span {
+        margin-right: 7px;
+      }
+    }
+    &:active {
+      & * {
+        color: $branding-success-dark;
+        stroke: $branding-success-dark;
+      }
+    }
+  }
+}
+
+.linkBtn {
+  border-radius: 53px;
+  padding: 16px 40px;
+  width: 201px;
+  height: 51px;
+  background: $gray-scale-white;
+  position: relative;
+  .linkContainerAbsolute {
+    position: absolute;
+  }
+  &:hover {
+    & * {
+      color: $branding-success-bright;
+      stroke: $branding-success-bright;
+    }
+    span {
+      margin-right: 7px;
+    }
+  }
+  &:active {
+    & * {
+      color: $branding-success-dark;
+      stroke: $branding-success-dark;
+    }
+  }
+}

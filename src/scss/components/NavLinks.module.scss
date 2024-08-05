@@ -1,0 +1,60 @@
+@import '../_variables.scss';
+
+.navLinks {
+  background: $gray-scale-gray-50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  border-radius: 5px;
+  transition: rotate 0.2s ease-in-out;
+  margin-bottom: 24px;
+  .linkCategories {
+    height: 28px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    .links {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        color: $gray-scale-gray-500;
+      }
+      svg {
+        width: 12px;
+        height: 8px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .active {
+      & > * {
+        color: $branding-success !important;
+      }
+      svg {
+        rotate: 180deg;
+      }
+      path {
+        stroke: $branding-success;
+      }
+    }
+  }
+
+  .call {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .callNumber {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.5;
+      color: $gray-scale-gray-900;
+    }
+  }
+}
