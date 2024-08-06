@@ -1,6 +1,11 @@
 import React from 'react'
 import Banner from '../components/Banner'
 import AboutUs from '../components/AboutUs'
+import TopCategories from '../components/TopCategories'
+import SaleProducts from '../components/SaleProducts'
+import Reviews from '../components/Reviews'
+import Footer from '../components/Footer'
+import Copyright from '../components/Copyright'
 
 const Home: React.FC = () => {
   return (
@@ -9,10 +14,11 @@ const Home: React.FC = () => {
         <Banner />
         <AboutUs />
       </div>
-      <div className='sales'></div>
-      <div className='categories'></div>
-      <div className='info'></div>
-      <div className='reviews'></div>
+      <TopCategories />
+      <SaleProducts />
+      <Reviews />
+			<Footer />
+			<Copyright />
       <div className='vk'></div>
     </div>
   )

@@ -3,10 +3,12 @@
 .features {
   display: flex;
 	justify-content: space-between;
+	gap: 5px;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 8px 40px 0 rgba(0, 38, 3, 0.08);
   background: $gray-scale-white;
+	margin-bottom: 100px;
   .feature {
     display: flex;
     align-items: center;

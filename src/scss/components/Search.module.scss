@@ -8,6 +8,9 @@
     border-radius: 5px;
     width: 410px;
     padding: 12px 45px;
+    &:focus::placeholder {
+      color: $gray-scale-gray-700;
+    }
   }
   .searchIcon {
     position: absolute;

@@ -4,17 +4,17 @@ import Home from './pages/Home'
 
 import styles from './scss/App.module.scss'
 import BgShepes from './components/BgShepes'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 const App: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div className='container'>
       <div className={styles.wrapper}>
         <Header />
-        <div className='content'>
-          <Routes>
-            <Route path='/' element={<Home />}></Route>
-          </Routes>
-        </div>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+        </Routes>
         <div className='footer'>
           <div className='container'></div>
         </div>

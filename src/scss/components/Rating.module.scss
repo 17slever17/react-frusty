@@ -1,0 +1,21 @@
+@import '../variables';
+
+.rating {
+	position: relative;
+	width: min-content;
+	.starsWrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		.stars {
+			width: auto;
+			path {
+				fill: $branding-warning;
+			}
+		}
+	}
+	.ratingIcon {
+		width: auto;
+	}
+}

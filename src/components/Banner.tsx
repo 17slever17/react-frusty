@@ -1,12 +1,16 @@
 import React from 'react'
 import styles from '../scss/components/Banner.module.scss'
 import LinkButton from './LinkButton'
+import bg1 from '../assets/img/bg1.jpg'
+import bg2 from '../assets/img/bg2.jpg'
+import bg3 from '../assets/img/bg3.jpg'
+
 
 const Banner = () => {
   return (
     <div className={styles.container}>
       <div className={styles.bg1}>
-        <img src='src/assets/img/bg1.jpg' alt='' />
+        <img src={bg1} alt='' />
         <div className={styles.info}>
           <span className={styles.title}>Свежие Продукты</span>
           <div className={styles.sale}>
@@ -25,7 +29,7 @@ const Banner = () => {
         </div>
       </div>
       <div className={styles.bg2}>
-        <img src='src/assets/img/bg2.jpg' alt='' />
+        <img src={bg2} alt='' />
         <div className={styles.info}>
           <div className={styles.description}>
             <span className={`${styles.title} ${styles.titleBg}`}>ЛЕТНИЕ СКИДКИ</span>
@@ -36,7 +40,7 @@ const Banner = () => {
         </div>
       </div>
       <div className={styles.bg3}>
-        <img src='src/assets/img/bg3.jpg' alt='' />
+        <img src={bg3} alt='' />
         <div className={styles.info}>
           <div className={styles.description}>
             <span className={`${styles.title} ${styles.titleBg}`}>ЛУЧШЕЕ</span>

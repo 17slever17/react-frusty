@@ -1,0 +1,44 @@
+@import '../_variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 100px;
+  .categories {
+    display: flex;
+    justify-content: space-between;
+		gap: 10px;
+    .card {
+      width: 200px;
+      height: 210px;
+      padding: 32px 0 24px 0;
+      gap: 20px;
+      .info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+        .cardTitle {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1.5;
+          text-align: center;
+          color: $gray-scale-gray-900;
+        }
+        .productsQuantity {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.5;
+          text-align: center;
+          color: $gray-scale-gray-500;
+        }
+      }
+      &:active {
+        .cardTitle {
+          color: $branding-success-dark;
+        }
+      }
+    }
+  }
+}

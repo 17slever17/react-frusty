@@ -32,7 +32,7 @@ const AboutUs = () => {
         <img src={packageImg} alt='package' />
         <div className={styles.info}>
           <span className={styles.title}>Гарантия возврата денег</span>
-          <span className={styles.description}>30-Дневная гарантия на возврат</span>
+          <span className={styles.description}>30 Дней гарантии на возврат</span>
         </div>
       </div>
     </div>

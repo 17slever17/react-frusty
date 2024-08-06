@@ -1,5 +1,6 @@
 import styles from '../../scss/components/NavLinks.module.scss'
 import VectorIcon from '../../assets/img/vector.svg?react'
+import phoneIcon from '../../assets/img/phoneIcon.svg'
 
 const NavLinks: React.FC = () => {
   return (
@@ -17,8 +18,8 @@ const NavLinks: React.FC = () => {
         ))}
       </div>
       <div className={styles.call}>
-        <img src='src/assets/img/phoneIcon.svg' alt='Телефон' />
-        <a href='tel:(219) 555-0114' className={styles.callNumber}>
+        <img src={phoneIcon} alt='Телефон' />
+        <a href='tel:(219) 555-0114' target='_blank' className={styles.callNumber}>
           (219) 555-0114
         </a>
       </div>

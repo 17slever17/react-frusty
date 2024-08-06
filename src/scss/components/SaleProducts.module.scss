@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 30px;
+  margin-bottom: 100px;
+  position: relative;
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.nextArrow {
+  right: -45px;
+}
+
+.prevArrow {
+  left: -45px;
+	svg {
+		rotate: 180deg;
+	}
+}
